@@ -15,7 +15,7 @@ IGNORE_INDEX = -100
 EOT_TOKEN = "<|EOT|>"
 
 def huggingface_login():
-    login(token="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")
+    login(token="")
     
 def take_user_input():
     parser = argparse.ArgumentParser(description="Get the user query and other relevant information")
