@@ -1,0 +1,1125 @@
+Node properties:
+- **ADLocalGroup**
+  - `description`: STRING
+  - `lastseen`: DATE_TIME
+  - `name`: STRING
+  - `domain`: STRING
+  - `distinguishedname`: STRING
+  - `domainsid`: STRING
+  - `objectid`: STRING
+  - `samaccountname`: STRING
+  - `reconcile`: BOOLEAN
+  - `isaclprotected`: BOOLEAN
+  - `admincount`: BOOLEAN
+  - `whencreated`: FLOAT
+  - `system_tags`: STRING
+- **Domain**
+  - `isaclprotected`: BOOLEAN
+  - `system_tags`: STRING
+  - `collected`: BOOLEAN
+  - `lastseen`: DATE_TIME
+  - `distinguishedname`: STRING
+  - `functionallevel`: STRING
+  - `domain`: STRING
+  - `name`: STRING
+  - `whencreated`: FLOAT
+  - `objectid`: STRING
+  - `domainsid`: STRING
+- **CertTemplate**
+  - `subjectaltrequireemail`: BOOLEAN
+  - `displayname`: STRING
+  - `authenticationenabled`: BOOLEAN
+  - `domain`: STRING
+  - `subjectaltrequirespn`: BOOLEAN
+  - `distinguishedname`: STRING
+  - `validityperiod`: STRING
+  - `subjectaltrequiredns`: BOOLEAN
+  - `subjectaltrequireupn`: BOOLEAN
+  - `renewalperiod`: STRING
+  - `ekus`: LIST
+  - `effectiveekus`: LIST
+  - `requiresmanagerapproval`: BOOLEAN
+  - `certificatenameflag`: STRING
+  - `certificateapplicationpolicy`: LIST
+  - `applicationpolicies`: LIST
+  - `enrollmentflag`: STRING
+  - `whencreated`: FLOAT
+  - `issuancepolicies`: LIST
+  - `authorizedsignatures`: FLOAT
+  - `subjectrequireemail`: BOOLEAN
+  - `schemaversion`: FLOAT
+  - `nosecurityextension`: BOOLEAN
+  - `subjectaltrequiredomaindns`: BOOLEAN
+  - `lastseen`: DATE_TIME
+  - `oid`: STRING
+  - `name`: STRING
+  - `objectid`: STRING
+  - `domainsid`: STRING
+  - `isaclprotected`: BOOLEAN
+  - `enrolleesuppliessubject`: BOOLEAN
+- **RootCA**
+  - `lastseen`: DATE_TIME
+  - `certchain`: LIST
+  - `basicconstraintpathlength`: FLOAT
+  - `isaclprotected`: BOOLEAN
+  - `name`: STRING
+  - `certthumbprint`: STRING
+  - `certname`: STRING
+  - `domain`: STRING
+  - `hasbasicconstraints`: BOOLEAN
+  - `domainsid`: STRING
+  - `whencreated`: FLOAT
+  - `objectid`: STRING
+  - `distinguishedname`: STRING
+- **NTAuthStore**
+  - `lastseen`: DATE_TIME
+  - `isaclprotected`: BOOLEAN
+  - `name`: STRING
+  - `domain`: STRING
+  - `distinguishedname`: STRING
+  - `domainsid`: STRING
+  - `whencreated`: FLOAT
+  - `objectid`: STRING
+  - `certthumbprints`: LIST
+- **Group**
+  - `unconstraineddelegation`: BOOLEAN
+  - `whencreated`: FLOAT
+  - `domain`: STRING
+  - `lastseen`: DATE_TIME
+  - `sidhistory`: LIST
+  - `operatingsystem`: STRING
+  - `haslaps`: BOOLEAN
+  - `isdc`: BOOLEAN
+  - `isaclprotected`: BOOLEAN
+  - `distinguishedname`: STRING
+  - `name`: STRING
+  - `domainsid`: STRING
+  - `pwdlastset`: FLOAT
+  - `lastlogon`: FLOAT
+  - `lastlogontimestamp`: FLOAT
+  - `samaccountname`: STRING
+  - `enabled`: BOOLEAN
+  - `trustedtoauth`: BOOLEAN
+  - `serviceprincipalnames`: LIST
+  - `objectid`: STRING
+  - `description`: STRING
+  - `reconcile`: BOOLEAN
+  - `admincount`: BOOLEAN
+  - `system_tags`: STRING
+- **Computer**
+  - `distinguishedname`: STRING
+  - `sidhistory`: LIST
+  - `unconstraineddelegation`: BOOLEAN
+  - `whencreated`: FLOAT
+  - `domain`: STRING
+  - `lastseen`: DATE_TIME
+  - `isaclprotected`: BOOLEAN
+  - `operatingsystem`: STRING
+  - `name`: STRING
+  - `lastlogon`: FLOAT
+  - `haslaps`: BOOLEAN
+  - `isdc`: BOOLEAN
+  - `samaccountname`: STRING
+  - `domainsid`: STRING
+  - `lastlogontimestamp`: FLOAT
+  - `pwdlastset`: FLOAT
+  - `enabled`: BOOLEAN
+  - `trustedtoauth`: BOOLEAN
+  - `serviceprincipalnames`: LIST
+  - `objectid`: STRING
+  - `description`: STRING
+  - `allowedtodelegate`: LIST
+  - `system_tags`: STRING
+  - `certificatemappingmethodsraw`: INTEGER
+  - `certificatemappingmethods`: LIST
+  - `hasura`: BOOLEAN
+  - `strongcertificatebindingenforcement`: STRING
+  - `strongcertificatebindingenforcementraw`: INTEGER
+  - `email`: STRING
+  - `admincount`: BOOLEAN
+  - `displayname`: STRING
+  - `passwordnotreqd`: BOOLEAN
+  - `sensitive`: BOOLEAN
+  - `dontreqpreauth`: BOOLEAN
+  - `pwdneverexpires`: BOOLEAN
+  - `hasspn`: BOOLEAN
+- **Container**
+  - `lastseen`: DATE_TIME
+  - `isaclprotected`: BOOLEAN
+  - `name`: STRING
+  - `objectid`: STRING
+  - `domain`: STRING
+  - `distinguishedname`: STRING
+  - `domainsid`: STRING
+- **OU**
+  - `lastseen`: DATE_TIME
+  - `name`: STRING
+  - `isaclprotected`: BOOLEAN
+  - `domain`: STRING
+  - `distinguishedname`: STRING
+  - `domainsid`: STRING
+  - `whencreated`: FLOAT
+  - `objectid`: STRING
+  - `blocksinheritance`: BOOLEAN
+  - `description`: STRING
+  - `system_tags`: STRING
+  - `displayname`: STRING
+  - `unconstraineddelegation`: BOOLEAN
+  - `sidhistory`: LIST
+  - `dontreqpreauth`: BOOLEAN
+  - `email`: STRING
+  - `pwdlastset`: FLOAT
+  - `lastlogon`: FLOAT
+  - `passwordnotreqd`: BOOLEAN
+  - `sensitive`: BOOLEAN
+  - `samaccountname`: STRING
+  - `serviceprincipalnames`: LIST
+  - `admincount`: BOOLEAN
+  - `lastlogontimestamp`: FLOAT
+  - `enabled`: BOOLEAN
+  - `pwdneverexpires`: BOOLEAN
+  - `hasspn`: BOOLEAN
+  - `trustedtoauth`: BOOLEAN
+- **GPO**
+  - `lastseen`: DATE_TIME
+  - `isaclprotected`: BOOLEAN
+  - `name`: STRING
+  - `domain`: STRING
+  - `domainsid`: STRING
+  - `gpcpath`: STRING
+  - `whencreated`: FLOAT
+  - `objectid`: STRING
+  - `distinguishedname`: STRING
+  - `system_tags`: STRING
+- **EnterpriseCA**
+  - `hasenrollmentagentrestrictions`: BOOLEAN
+  - `domain`: STRING
+  - `distinguishedname`: STRING
+  - `dnshostname`: STRING
+  - `isuserspecifiessanenabled`: BOOLEAN
+  - `caname`: STRING
+  - `isuserspecifiessanenabledcollected`: BOOLEAN
+  - `flags`: STRING
+  - `enrollmentagentrestrictionscollected`: BOOLEAN
+  - `whencreated`: FLOAT
+  - `lastseen`: DATE_TIME
+  - `casecuritycollected`: BOOLEAN
+  - `domainsid`: STRING
+  - `basicconstraintpathlength`: FLOAT
+  - `isaclprotected`: BOOLEAN
+  - `certthumbprint`: STRING
+  - `certname`: STRING
+  - `objectid`: STRING
+  - `name`: STRING
+  - `hasbasicconstraints`: BOOLEAN
+  - `certchain`: LIST
+- **AIACA**
+  - `lastseen`: DATE_TIME
+  - `hascrosscertificatepair`: BOOLEAN
+  - `crosscertificatepair`: LIST
+  - `isaclprotected`: BOOLEAN
+  - `domainsid`: STRING
+  - `certchain`: LIST
+  - `basicconstraintpathlength`: FLOAT
+  - `certthumbprint`: STRING
+  - `certname`: STRING
+  - `domain`: STRING
+  - `distinguishedname`: STRING
+  - `hasbasicconstraints`: BOOLEAN
+  - `whencreated`: FLOAT
+  - `objectid`: STRING
+  - `name`: STRING
+- **User**
+  - `unconstraineddelegation`: BOOLEAN
+  - `whencreated`: FLOAT
+  - `domain`: STRING
+  - `lastseen`: DATE_TIME
+  - `sidhistory`: LIST
+  - `operatingsystem`: STRING
+  - `haslaps`: BOOLEAN
+  - `isdc`: BOOLEAN
+  - `isaclprotected`: BOOLEAN
+  - `distinguishedname`: STRING
+  - `name`: STRING
+  - `domainsid`: STRING
+  - `pwdlastset`: FLOAT
+  - `lastlogon`: FLOAT
+  - `lastlogontimestamp`: FLOAT
+  - `samaccountname`: STRING
+  - `enabled`: BOOLEAN
+  - `trustedtoauth`: BOOLEAN
+  - `serviceprincipalnames`: LIST
+  - `objectid`: STRING
+  - `blocksinheritance`: BOOLEAN
+  - `description`: STRING
+  - `dontreqpreauth`: BOOLEAN
+  - `passwordnotreqd`: BOOLEAN
+  - `sensitive`: BOOLEAN
+  - `admincount`: BOOLEAN
+  - `pwdneverexpires`: BOOLEAN
+  - `hasspn`: BOOLEAN
+  - `system_tags`: STRING
+  - `displayname`: STRING
+  - `email`: STRING
+  - `gmsa`: BOOLEAN
+  - `title`: STRING
+  - `msa`: BOOLEAN
+  - `reconcile`: BOOLEAN
+- **Base**
+  - `distinguishedname`: STRING
+  - `sidhistory`: LIST
+  - `unconstraineddelegation`: BOOLEAN
+  - `whencreated`: FLOAT
+  - `domain`: STRING
+  - `lastseen`: DATE_TIME
+  - `isaclprotected`: BOOLEAN
+  - `operatingsystem`: STRING
+  - `name`: STRING
+  - `lastlogon`: FLOAT
+  - `haslaps`: BOOLEAN
+  - `isdc`: BOOLEAN
+  - `samaccountname`: STRING
+  - `domainsid`: STRING
+  - `lastlogontimestamp`: FLOAT
+  - `pwdlastset`: FLOAT
+  - `enabled`: BOOLEAN
+  - `trustedtoauth`: BOOLEAN
+  - `serviceprincipalnames`: LIST
+  - `objectid`: STRING
+  - `description`: STRING
+  - `allowedtodelegate`: LIST
+  - `system_tags`: STRING
+  - `certificatemappingmethodsraw`: INTEGER
+  - `certificatemappingmethods`: LIST
+  - `hasura`: BOOLEAN
+  - `strongcertificatebindingenforcement`: STRING
+  - `strongcertificatebindingenforcementraw`: INTEGER
+  - `email`: STRING
+  - `collected`: BOOLEAN
+  - `functionallevel`: STRING
+  - `certthumbprints`: LIST
+  - `blocksinheritance`: BOOLEAN
+  - `certchain`: LIST
+  - `basicconstraintpathlength`: FLOAT
+  - `certthumbprint`: STRING
+  - `certname`: STRING
+  - `hasbasicconstraints`: BOOLEAN
+  - `hascrosscertificatepair`: BOOLEAN
+  - `crosscertificatepair`: LIST
+  - `subjectaltrequireemail`: BOOLEAN
+  - `displayname`: STRING
+  - `authenticationenabled`: BOOLEAN
+  - `subjectaltrequirespn`: BOOLEAN
+  - `validityperiod`: STRING
+  - `subjectaltrequiredns`: BOOLEAN
+  - `subjectaltrequireupn`: BOOLEAN
+  - `renewalperiod`: STRING
+  - `ekus`: LIST
+  - `effectiveekus`: LIST
+  - `requiresmanagerapproval`: BOOLEAN
+  - `certificatenameflag`: STRING
+  - `certificateapplicationpolicy`: LIST
+  - `applicationpolicies`: LIST
+  - `enrollmentflag`: STRING
+  - `issuancepolicies`: LIST
+  - `authorizedsignatures`: FLOAT
+  - `subjectrequireemail`: BOOLEAN
+  - `schemaversion`: FLOAT
+  - `nosecurityextension`: BOOLEAN
+  - `subjectaltrequiredomaindns`: BOOLEAN
+  - `oid`: STRING
+  - `enrolleesuppliessubject`: BOOLEAN
+  - `hasenrollmentagentrestrictions`: BOOLEAN
+  - `dnshostname`: STRING
+  - `isuserspecifiessanenabled`: BOOLEAN
+  - `caname`: STRING
+  - `isuserspecifiessanenabledcollected`: BOOLEAN
+  - `flags`: STRING
+  - `enrollmentagentrestrictionscollected`: BOOLEAN
+  - `casecuritycollected`: BOOLEAN
+  - `gpcpath`: STRING
+  - `reconcile`: BOOLEAN
+  - `admincount`: BOOLEAN
+  - `dontreqpreauth`: BOOLEAN
+  - `passwordnotreqd`: BOOLEAN
+  - `sensitive`: BOOLEAN
+  - `pwdneverexpires`: BOOLEAN
+  - `hasspn`: BOOLEAN
+  - `gmsa`: BOOLEAN
+  - `title`: STRING
+  - `msa`: BOOLEAN
+
+Relationship properties:
+- **GenericAll**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **Owns**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **WriteOwner**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **GetChanges**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **Contains**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **WritePKINameFlag**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **GetChangesInFilteredSet**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **GPLink**
+  - `enforced`: BOOLEAN
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **ForceChangePassword**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **WriteDacl**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **RootCAFor**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **AddKeyCredentialLink**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **MemberOf**
+  - `isprimarygroup`: BOOLEAN
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **AllExtendedRights**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **AddMember**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **RemoteInteractiveLogonPrivilege**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **ReadGMSAPassword**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **ManageCA**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **WritePKIEnrollmentFlag**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **TrustedBy**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+  - `trusttype`: STRING
+  - `sidfiltering`: BOOLEAN
+  - `transitive`: BOOLEAN
+- **Enroll**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **MemberOfLocalGroup**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **WriteAccountRestrictions**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **AllowedToDelegate**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **DelegatedEnrollmentAgent**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **PublishedTo**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **GenericWrite**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **NTAuthStoreFor**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **DCFor**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **AddSelf**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **ManageCertificates**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **DumpSMSAPassword**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **AddAllowedToAct**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **HostsCAService**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **LocalToComputer**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **ReadLAPSPassword**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **GetChangesAll**
+  - `lastseen`: DATE_TIME
+  - `isacl`: BOOLEAN
+  - `isinherited`: BOOLEAN
+- **HasSession**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **AllowedToAct**
+  - `isacl`: BOOLEAN
+  - `lastseen`: DATE_TIME
+- **DCSync**
+  - `lastseen`: DATE_TIME
+- **SyncLAPSPassword**
+  - `lastseen`: DATE_TIME
+- **AdminTo**
+  - `lastseen`: DATE_TIME
+- **EnterpriseCAFor**
+  - `lastseen`: DATE_TIME
+- **TrustedForNTAuth**
+  - `lastseen`: DATE_TIME
+- **IssuedSignedBy**
+  - `lastseen`: DATE_TIME
+- **CanAbuseUPNCertMapping**
+  - `lastseen`: DATE_TIME
+- **CanAbuseWeakCertBinding**
+  - `lastseen`: DATE_TIME
+- **EnrollOnBehalfOf**
+  - `lastseen`: DATE_TIME
+- **ADCSESC1**
+  - `lastseen`: DATE_TIME
+- **ADCSESC9b**
+  - `lastseen`: DATE_TIME
+- **ADCSESC4**
+  - `lastseen`: DATE_TIME
+- **ADCSESC3**
+  - `lastseen`: DATE_TIME
+- **GoldenCert**
+  - `lastseen`: DATE_TIME
+- **ADCSESC6a**
+  - `lastseen`: DATE_TIME
+- **ADCSESC6b**
+  - `lastseen`: DATE_TIME
+- **ADCSESC10b**
+  - `lastseen`: DATE_TIME
+- **ADCSESC9a**
+  - `lastseen`: DATE_TIME
+- **ADCSESC10a**
+  - `lastseen`: DATE_TIME
+
+The relationships:
+(:ADLocalGroup)-[:LocalToComputer]->(:Computer)
+(:ADLocalGroup)-[:LocalToComputer]->(:Base)
+(:ADLocalGroup)-[:GenericAll]->(:User)
+(:ADLocalGroup)-[:GenericAll]->(:Base)
+(:ADLocalGroup)-[:GenericAll]->(:Computer)
+(:ADLocalGroup)-[:GenericAll]->(:RootCA)
+(:ADLocalGroup)-[:GenericAll]->(:AIACA)
+(:ADLocalGroup)-[:GenericAll]->(:Container)
+(:ADLocalGroup)-[:GenericAll]->(:NTAuthStore)
+(:ADLocalGroup)-[:ADCSESC9b]->(:Domain)
+(:ADLocalGroup)-[:ADCSESC9b]->(:Base)
+(:ADLocalGroup)-[:ADCSESC10b]->(:Domain)
+(:ADLocalGroup)-[:ADCSESC10b]->(:Base)
+(:ADLocalGroup)-[:ADCSESC9a]->(:Domain)
+(:ADLocalGroup)-[:ADCSESC9a]->(:Base)
+(:ADLocalGroup)-[:ADCSESC10a]->(:Domain)
+(:ADLocalGroup)-[:ADCSESC10a]->(:Base)
+(:ADLocalGroup)-[:Owns]->(:ADLocalGroup)
+(:ADLocalGroup)-[:Owns]->(:Group)
+(:ADLocalGroup)-[:Owns]->(:Base)
+(:ADLocalGroup)-[:Owns]->(:Domain)
+(:ADLocalGroup)-[:Owns]->(:User)
+(:ADLocalGroup)-[:DCSync]->(:Domain)
+(:ADLocalGroup)-[:DCSync]->(:Base)
+(:ADLocalGroup)-[:WriteOwner]->(:Computer)
+(:ADLocalGroup)-[:WriteOwner]->(:Base)
+(:ADLocalGroup)-[:WriteOwner]->(:Group)
+(:ADLocalGroup)-[:WriteOwner]->(:User)
+(:ADLocalGroup)-[:WriteOwner]->(:OU)
+(:ADLocalGroup)-[:WriteOwner]->(:Container)
+(:ADLocalGroup)-[:WriteOwner]->(:ADLocalGroup)
+(:ADLocalGroup)-[:WriteOwner]->(:Domain)
+(:ADLocalGroup)-[:GetChanges]->(:Domain)
+(:ADLocalGroup)-[:GetChanges]->(:Base)
+(:ADLocalGroup)-[:GetChangesInFilteredSet]->(:Domain)
+(:ADLocalGroup)-[:GetChangesInFilteredSet]->(:Base)
+(:ADLocalGroup)-[:WriteDacl]->(:Group)
+(:ADLocalGroup)-[:WriteDacl]->(:Base)
+(:ADLocalGroup)-[:WriteDacl]->(:Container)
+(:ADLocalGroup)-[:WriteDacl]->(:OU)
+(:ADLocalGroup)-[:WriteDacl]->(:Computer)
+(:ADLocalGroup)-[:WriteDacl]->(:User)
+(:ADLocalGroup)-[:WriteDacl]->(:Domain)
+(:ADLocalGroup)-[:WriteDacl]->(:ADLocalGroup)
+(:ADLocalGroup)-[:AllExtendedRights]->(:User)
+(:ADLocalGroup)-[:AllExtendedRights]->(:Base)
+(:ADLocalGroup)-[:AllExtendedRights]->(:Domain)
+(:ADLocalGroup)-[:AllExtendedRights]->(:OU)
+(:ADLocalGroup)-[:AllExtendedRights]->(:Computer)
+(:ADLocalGroup)-[:RemoteInteractiveLogonPrivilege]->(:Computer)
+(:ADLocalGroup)-[:RemoteInteractiveLogonPrivilege]->(:Base)
+(:ADLocalGroup)-[:ManageCA]->(:EnterpriseCA)
+(:ADLocalGroup)-[:ManageCA]->(:Base)
+(:ADLocalGroup)-[:GenericWrite]->(:Computer)
+(:ADLocalGroup)-[:GenericWrite]->(:Base)
+(:ADLocalGroup)-[:GenericWrite]->(:User)
+(:ADLocalGroup)-[:GenericWrite]->(:Group)
+(:ADLocalGroup)-[:GenericWrite]->(:ADLocalGroup)
+(:ADLocalGroup)-[:GenericWrite]->(:OU)
+(:ADLocalGroup)-[:ManageCertificates]->(:EnterpriseCA)
+(:ADLocalGroup)-[:ManageCertificates]->(:Base)
+(:ADLocalGroup)-[:GetChangesAll]->(:Domain)
+(:ADLocalGroup)-[:GetChangesAll]->(:Base)
+(:ADLocalGroup)-[:SyncLAPSPassword]->(:Computer)
+(:ADLocalGroup)-[:SyncLAPSPassword]->(:Base)
+(:ADLocalGroup)-[:DelegatedEnrollmentAgent]->(:CertTemplate)
+(:ADLocalGroup)-[:DelegatedEnrollmentAgent]->(:Base)
+(:Domain)-[:Contains]->(:Container)
+(:Domain)-[:Contains]->(:Base)
+(:Domain)-[:Contains]->(:OU)
+(:Domain)-[:TrustedBy]->(:Domain)
+(:Domain)-[:TrustedBy]->(:Base)
+(:CertTemplate)-[:PublishedTo]->(:EnterpriseCA)
+(:CertTemplate)-[:PublishedTo]->(:Base)
+(:CertTemplate)-[:EnrollOnBehalfOf]->(:CertTemplate)
+(:CertTemplate)-[:EnrollOnBehalfOf]->(:Base)
+(:RootCA)-[:RootCAFor]->(:Domain)
+(:RootCA)-[:RootCAFor]->(:Base)
+(:NTAuthStore)-[:NTAuthStoreFor]->(:Domain)
+(:NTAuthStore)-[:NTAuthStoreFor]->(:Base)
+(:Group)-[:ADCSESC9a]->(:Domain)
+(:Group)-[:ADCSESC9a]->(:Base)
+(:Group)-[:Owns]->(:Computer)
+(:Group)-[:Owns]->(:User)
+(:Group)-[:Owns]->(:Base)
+(:Group)-[:Owns]->(:Group)
+(:Group)-[:Owns]->(:Container)
+(:Group)-[:Owns]->(:CertTemplate)
+(:Group)-[:Owns]->(:EnterpriseCA)
+(:Group)-[:Owns]->(:AIACA)
+(:Group)-[:Owns]->(:NTAuthStore)
+(:Group)-[:Owns]->(:RootCA)
+(:Group)-[:Owns]->(:OU)
+(:Group)-[:Owns]->(:GPO)
+(:Group)-[:Owns]->(:ADLocalGroup)
+(:Group)-[:Owns]->(:Domain)
+(:Group)-[:MemberOf]->(:Group)
+(:Group)-[:MemberOf]->(:Base)
+(:Group)-[:MemberOf]->(:ADLocalGroup)
+(:Group)-[:LocalToComputer]->(:Computer)
+(:Group)-[:LocalToComputer]->(:Base)
+(:Group)-[:GenericAll]->(:User)
+(:Group)-[:GenericAll]->(:Base)
+(:Group)-[:GenericAll]->(:Computer)
+(:Group)-[:GenericAll]->(:Container)
+(:Group)-[:GenericAll]->(:OU)
+(:Group)-[:GenericAll]->(:RootCA)
+(:Group)-[:GenericAll]->(:Group)
+(:Group)-[:GenericAll]->(:CertTemplate)
+(:Group)-[:GenericAll]->(:EnterpriseCA)
+(:Group)-[:GenericAll]->(:AIACA)
+(:Group)-[:GenericAll]->(:Domain)
+(:Group)-[:GenericAll]->(:NTAuthStore)
+(:Group)-[:GenericAll]->(:ADLocalGroup)
+(:Group)-[:ADCSESC9b]->(:Domain)
+(:Group)-[:ADCSESC9b]->(:Base)
+(:Group)-[:ADCSESC10b]->(:Domain)
+(:Group)-[:ADCSESC10b]->(:Base)
+(:Group)-[:ADCSESC10a]->(:Domain)
+(:Group)-[:ADCSESC10a]->(:Base)
+(:Group)-[:Enroll]->(:CertTemplate)
+(:Group)-[:Enroll]->(:Base)
+(:Group)-[:Enroll]->(:EnterpriseCA)
+(:Group)-[:GetChangesAll]->(:Domain)
+(:Group)-[:GetChangesAll]->(:Base)
+(:Group)-[:WriteOwner]->(:Container)
+(:Group)-[:WriteOwner]->(:Base)
+(:Group)-[:WriteOwner]->(:User)
+(:Group)-[:WriteOwner]->(:EnterpriseCA)
+(:Group)-[:WriteOwner]->(:CertTemplate)
+(:Group)-[:WriteOwner]->(:Group)
+(:Group)-[:WriteOwner]->(:GPO)
+(:Group)-[:WriteOwner]->(:ADLocalGroup)
+(:Group)-[:WriteOwner]->(:Computer)
+(:Group)-[:WriteOwner]->(:RootCA)
+(:Group)-[:WriteOwner]->(:AIACA)
+(:Group)-[:WriteOwner]->(:NTAuthStore)
+(:Group)-[:WriteOwner]->(:OU)
+(:Group)-[:WriteOwner]->(:Domain)
+(:Group)-[:WriteDacl]->(:Container)
+(:Group)-[:WriteDacl]->(:Base)
+(:Group)-[:WriteDacl]->(:CertTemplate)
+(:Group)-[:WriteDacl]->(:GPO)
+(:Group)-[:WriteDacl]->(:User)
+(:Group)-[:WriteDacl]->(:ADLocalGroup)
+(:Group)-[:WriteDacl]->(:Group)
+(:Group)-[:WriteDacl]->(:Computer)
+(:Group)-[:WriteDacl]->(:EnterpriseCA)
+(:Group)-[:WriteDacl]->(:Domain)
+(:Group)-[:WriteDacl]->(:AIACA)
+(:Group)-[:WriteDacl]->(:OU)
+(:Group)-[:WriteDacl]->(:RootCA)
+(:Group)-[:WriteDacl]->(:NTAuthStore)
+(:Group)-[:AllExtendedRights]->(:User)
+(:Group)-[:AllExtendedRights]->(:Base)
+(:Group)-[:AllExtendedRights]->(:CertTemplate)
+(:Group)-[:AllExtendedRights]->(:Domain)
+(:Group)-[:AllExtendedRights]->(:OU)
+(:Group)-[:AllExtendedRights]->(:Computer)
+(:Group)-[:ManageCA]->(:EnterpriseCA)
+(:Group)-[:ManageCA]->(:Base)
+(:Group)-[:GenericWrite]->(:User)
+(:Group)-[:GenericWrite]->(:Base)
+(:Group)-[:GenericWrite]->(:Group)
+(:Group)-[:GenericWrite]->(:GPO)
+(:Group)-[:GenericWrite]->(:ADLocalGroup)
+(:Group)-[:GenericWrite]->(:Computer)
+(:Group)-[:GenericWrite]->(:OU)
+(:Group)-[:ManageCertificates]->(:EnterpriseCA)
+(:Group)-[:ManageCertificates]->(:Base)
+(:Group)-[:WritePKINameFlag]->(:CertTemplate)
+(:Group)-[:WritePKINameFlag]->(:Base)
+(:Group)-[:ADCSESC3]->(:Domain)
+(:Group)-[:ADCSESC3]->(:Base)
+(:Group)-[:ADCSESC6b]->(:Domain)
+(:Group)-[:ADCSESC6b]->(:Base)
+(:Group)-[:WritePKIEnrollmentFlag]->(:CertTemplate)
+(:Group)-[:WritePKIEnrollmentFlag]->(:Base)
+(:Group)-[:MemberOfLocalGroup]->(:ADLocalGroup)
+(:Group)-[:MemberOfLocalGroup]->(:Group)
+(:Group)-[:MemberOfLocalGroup]->(:Base)
+(:Group)-[:AddKeyCredentialLink]->(:User)
+(:Group)-[:AddKeyCredentialLink]->(:Base)
+(:Group)-[:AddKeyCredentialLink]->(:Computer)
+(:Group)-[:AddKeyCredentialLink]->(:Group)
+(:Group)-[:DCSync]->(:Domain)
+(:Group)-[:DCSync]->(:Base)
+(:Group)-[:AddMember]->(:Group)
+(:Group)-[:AddMember]->(:Base)
+(:Group)-[:AddMember]->(:ADLocalGroup)
+(:Group)-[:AddMember]->(:Computer)
+(:Group)-[:GetChanges]->(:Domain)
+(:Group)-[:GetChanges]->(:Base)
+(:Group)-[:GetChangesInFilteredSet]->(:Domain)
+(:Group)-[:GetChangesInFilteredSet]->(:Base)
+(:Group)-[:RemoteInteractiveLogonPrivilege]->(:Computer)
+(:Group)-[:RemoteInteractiveLogonPrivilege]->(:Base)
+(:Group)-[:ForceChangePassword]->(:User)
+(:Group)-[:ForceChangePassword]->(:Base)
+(:Group)-[:ForceChangePassword]->(:Computer)
+(:Group)-[:ReadGMSAPassword]->(:User)
+(:Group)-[:ReadGMSAPassword]->(:Base)
+(:Group)-[:WriteAccountRestrictions]->(:Computer)
+(:Group)-[:WriteAccountRestrictions]->(:Base)
+(:Group)-[:ADCSESC1]->(:Domain)
+(:Group)-[:ADCSESC1]->(:Base)
+(:Group)-[:ADCSESC6a]->(:Domain)
+(:Group)-[:ADCSESC6a]->(:Base)
+(:Group)-[:AdminTo]->(:Computer)
+(:Group)-[:AdminTo]->(:Base)
+(:Group)-[:SyncLAPSPassword]->(:Computer)
+(:Group)-[:SyncLAPSPassword]->(:Base)
+(:Group)-[:DelegatedEnrollmentAgent]->(:CertTemplate)
+(:Group)-[:DelegatedEnrollmentAgent]->(:Base)
+(:Group)-[:ReadLAPSPassword]->(:Computer)
+(:Group)-[:ReadLAPSPassword]->(:Base)
+(:Computer)-[:HasSession]->(:User)
+(:Computer)-[:HasSession]->(:Base)
+(:Computer)-[:HasSession]->(:OU)
+(:Computer)-[:MemberOf]->(:Group)
+(:Computer)-[:MemberOf]->(:Base)
+(:Computer)-[:MemberOf]->(:ADLocalGroup)
+(:Computer)-[:GoldenCert]->(:Domain)
+(:Computer)-[:GoldenCert]->(:Base)
+(:Computer)-[:GenericAll]->(:AIACA)
+(:Computer)-[:GenericAll]->(:Base)
+(:Computer)-[:HostsCAService]->(:EnterpriseCA)
+(:Computer)-[:HostsCAService]->(:Base)
+(:Computer)-[:WriteOwner]->(:EnterpriseCA)
+(:Computer)-[:WriteOwner]->(:Base)
+(:Computer)-[:WriteDacl]->(:EnterpriseCA)
+(:Computer)-[:WriteDacl]->(:Base)
+(:Computer)-[:ReadGMSAPassword]->(:User)
+(:Computer)-[:ReadGMSAPassword]->(:Base)
+(:Computer)-[:ManageCA]->(:EnterpriseCA)
+(:Computer)-[:ManageCA]->(:Base)
+(:Computer)-[:MemberOfLocalGroup]->(:ADLocalGroup)
+(:Computer)-[:MemberOfLocalGroup]->(:Group)
+(:Computer)-[:MemberOfLocalGroup]->(:Base)
+(:Computer)-[:ManageCertificates]->(:EnterpriseCA)
+(:Computer)-[:ManageCertificates]->(:Base)
+(:Computer)-[:WritePKIEnrollmentFlag]->(:CertTemplate)
+(:Computer)-[:WritePKIEnrollmentFlag]->(:Base)
+(:Computer)-[:Enroll]->(:CertTemplate)
+(:Computer)-[:Enroll]->(:Base)
+(:Computer)-[:AllowedToDelegate]->(:Computer)
+(:Computer)-[:AllowedToDelegate]->(:Base)
+(:Computer)-[:ForceChangePassword]->(:User)
+(:Computer)-[:ForceChangePassword]->(:Base)
+(:Computer)-[:ADCSESC3]->(:Domain)
+(:Computer)-[:ADCSESC3]->(:Base)
+(:Computer)-[:ADCSESC6b]->(:Domain)
+(:Computer)-[:ADCSESC6b]->(:Base)
+(:Computer)-[:DCSync]->(:Domain)
+(:Computer)-[:DCSync]->(:Base)
+(:Computer)-[:DCFor]->(:Domain)
+(:Computer)-[:DCFor]->(:Base)
+(:Computer)-[:DumpSMSAPassword]->(:User)
+(:Computer)-[:DumpSMSAPassword]->(:Base)
+(:Computer)-[:AllowedToAct]->(:Computer)
+(:Computer)-[:AllowedToAct]->(:Base)
+(:Computer)-[:ADCSESC9a]->(:Domain)
+(:Computer)-[:ADCSESC9a]->(:Base)
+(:Computer)-[:Owns]->(:Computer)
+(:Computer)-[:Owns]->(:User)
+(:Computer)-[:Owns]->(:Base)
+(:Computer)-[:Owns]->(:Group)
+(:Container)-[:Contains]->(:Container)
+(:Container)-[:Contains]->(:Base)
+(:Container)-[:Contains]->(:User)
+(:Container)-[:Contains]->(:Group)
+(:Container)-[:Contains]->(:Computer)
+(:Container)-[:Contains]->(:NTAuthStore)
+(:Container)-[:Contains]->(:CertTemplate)
+(:Container)-[:Contains]->(:EnterpriseCA)
+(:Container)-[:Contains]->(:RootCA)
+(:Container)-[:Contains]->(:AIACA)
+(:OU)-[:Contains]->(:User)
+(:OU)-[:Contains]->(:Base)
+(:OU)-[:Contains]->(:Computer)
+(:OU)-[:Contains]->(:Group)
+(:OU)-[:Contains]->(:OU)
+(:OU)-[:GenericAll]->(:Container)
+(:OU)-[:GenericAll]->(:Base)
+(:OU)-[:Owns]->(:CertTemplate)
+(:OU)-[:Owns]->(:Base)
+(:OU)-[:DCSync]->(:Domain)
+(:OU)-[:DCSync]->(:Base)
+(:OU)-[:WriteOwner]->(:CertTemplate)
+(:OU)-[:WriteOwner]->(:Base)
+(:OU)-[:WriteDacl]->(:CertTemplate)
+(:OU)-[:WriteDacl]->(:Base)
+(:OU)-[:ADCSESC1]->(:Domain)
+(:OU)-[:ADCSESC1]->(:Base)
+(:OU)-[:MemberOf]->(:Group)
+(:OU)-[:MemberOf]->(:Base)
+(:OU)-[:MemberOf]->(:Computer)
+(:OU)-[:ADCSESC4]->(:Domain)
+(:OU)-[:ADCSESC4]->(:Base)
+(:OU)-[:ADCSESC3]->(:Domain)
+(:OU)-[:ADCSESC3]->(:Base)
+(:OU)-[:Enroll]->(:CertTemplate)
+(:OU)-[:Enroll]->(:Base)
+(:GPO)-[:GPLink]->(:OU)
+(:GPO)-[:GPLink]->(:Base)
+(:GPO)-[:GPLink]->(:Domain)
+(:EnterpriseCA)-[:EnterpriseCAFor]->(:RootCA)
+(:EnterpriseCA)-[:EnterpriseCAFor]->(:Base)
+(:EnterpriseCA)-[:TrustedForNTAuth]->(:NTAuthStore)
+(:EnterpriseCA)-[:TrustedForNTAuth]->(:Base)
+(:EnterpriseCA)-[:CanAbuseUPNCertMapping]->(:Computer)
+(:EnterpriseCA)-[:CanAbuseUPNCertMapping]->(:Base)
+(:EnterpriseCA)-[:CanAbuseWeakCertBinding]->(:Computer)
+(:EnterpriseCA)-[:CanAbuseWeakCertBinding]->(:Base)
+(:EnterpriseCA)-[:IssuedSignedBy]->(:EnterpriseCA)
+(:EnterpriseCA)-[:IssuedSignedBy]->(:Base)
+(:EnterpriseCA)-[:IssuedSignedBy]->(:RootCA)
+(:User)-[:ADCSESC9a]->(:Domain)
+(:User)-[:ADCSESC9a]->(:Base)
+(:User)-[:Owns]->(:Computer)
+(:User)-[:Owns]->(:User)
+(:User)-[:Owns]->(:Base)
+(:User)-[:Owns]->(:Group)
+(:User)-[:Owns]->(:GPO)
+(:User)-[:Owns]->(:RootCA)
+(:User)-[:Owns]->(:AIACA)
+(:User)-[:Owns]->(:CertTemplate)
+(:User)-[:MemberOf]->(:Group)
+(:User)-[:MemberOf]->(:Base)
+(:User)-[:MemberOf]->(:ADLocalGroup)
+(:User)-[:MemberOf]->(:Computer)
+(:User)-[:Contains]->(:Group)
+(:User)-[:Contains]->(:Base)
+(:User)-[:Contains]->(:OU)
+(:User)-[:Contains]->(:User)
+(:User)-[:DCSync]->(:Domain)
+(:User)-[:DCSync]->(:Base)
+(:User)-[:AddKeyCredentialLink]->(:Computer)
+(:User)-[:AddKeyCredentialLink]->(:Base)
+(:User)-[:AddKeyCredentialLink]->(:User)
+(:User)-[:AllExtendedRights]->(:User)
+(:User)-[:AllExtendedRights]->(:Base)
+(:User)-[:AllExtendedRights]->(:CertTemplate)
+(:User)-[:ADCSESC1]->(:Domain)
+(:User)-[:ADCSESC1]->(:Base)
+(:User)-[:AdminTo]->(:Computer)
+(:User)-[:AdminTo]->(:Base)
+(:User)-[:ADCSESC4]->(:Domain)
+(:User)-[:ADCSESC4]->(:Base)
+(:User)-[:ADCSESC3]->(:Domain)
+(:User)-[:ADCSESC3]->(:Base)
+(:User)-[:ADCSESC6b]->(:Domain)
+(:User)-[:ADCSESC6b]->(:Base)
+(:User)-[:ADCSESC6a]->(:Domain)
+(:User)-[:ADCSESC6a]->(:Base)
+(:User)-[:MemberOfLocalGroup]->(:ADLocalGroup)
+(:User)-[:MemberOfLocalGroup]->(:Group)
+(:User)-[:MemberOfLocalGroup]->(:Base)
+(:User)-[:GenericAll]->(:CertTemplate)
+(:User)-[:GenericAll]->(:Base)
+(:User)-[:GenericAll]->(:RootCA)
+(:User)-[:GenericAll]->(:Container)
+(:User)-[:GenericAll]->(:AIACA)
+(:User)-[:GenericAll]->(:Computer)
+(:User)-[:GenericAll]->(:OU)
+(:User)-[:GenericAll]->(:User)
+(:User)-[:WriteOwner]->(:GPO)
+(:User)-[:WriteOwner]->(:Base)
+(:User)-[:WriteOwner]->(:CertTemplate)
+(:User)-[:WriteDacl]->(:GPO)
+(:User)-[:WriteDacl]->(:Base)
+(:User)-[:WriteDacl]->(:CertTemplate)
+(:User)-[:GenericWrite]->(:GPO)
+(:User)-[:GenericWrite]->(:Base)
+(:User)-[:AddSelf]->(:Group)
+(:User)-[:AddSelf]->(:Base)
+(:User)-[:AddMember]->(:Group)
+(:User)-[:AddMember]->(:Base)
+(:User)-[:AddAllowedToAct]->(:Computer)
+(:User)-[:AddAllowedToAct]->(:Base)
+(:User)-[:ADCSESC9b]->(:Domain)
+(:User)-[:ADCSESC9b]->(:Base)
+(:User)-[:ADCSESC10b]->(:Domain)
+(:User)-[:ADCSESC10b]->(:Base)
+(:User)-[:ADCSESC10a]->(:Domain)
+(:User)-[:ADCSESC10a]->(:Base)
+(:User)-[:WriteAccountRestrictions]->(:Computer)
+(:User)-[:WriteAccountRestrictions]->(:Base)
+(:User)-[:Enroll]->(:CertTemplate)
+(:User)-[:Enroll]->(:Base)
+(:User)-[:Enroll]->(:EnterpriseCA)
+(:User)-[:ManageCA]->(:EnterpriseCA)
+(:User)-[:ManageCA]->(:Base)
+(:User)-[:ForceChangePassword]->(:User)
+(:User)-[:ForceChangePassword]->(:Base)
+(:Base)-[:HasSession]->(:User)
+(:Base)-[:HasSession]->(:Base)
+(:Base)-[:HasSession]->(:OU)
+(:Base)-[:MemberOf]->(:Group)
+(:Base)-[:MemberOf]->(:Base)
+(:Base)-[:MemberOf]->(:ADLocalGroup)
+(:Base)-[:MemberOf]->(:Computer)
+(:Base)-[:GoldenCert]->(:Domain)
+(:Base)-[:GoldenCert]->(:Base)
+(:Base)-[:GenericAll]->(:AIACA)
+(:Base)-[:GenericAll]->(:Base)
+(:Base)-[:GenericAll]->(:User)
+(:Base)-[:GenericAll]->(:Computer)
+(:Base)-[:GenericAll]->(:Container)
+(:Base)-[:GenericAll]->(:OU)
+(:Base)-[:GenericAll]->(:RootCA)
+(:Base)-[:GenericAll]->(:Group)
+(:Base)-[:GenericAll]->(:CertTemplate)
+(:Base)-[:GenericAll]->(:EnterpriseCA)
+(:Base)-[:GenericAll]->(:Domain)
+(:Base)-[:GenericAll]->(:NTAuthStore)
+(:Base)-[:GenericAll]->(:ADLocalGroup)
+(:Base)-[:HostsCAService]->(:EnterpriseCA)
+(:Base)-[:HostsCAService]->(:Base)
+(:Base)-[:WriteOwner]->(:EnterpriseCA)
+(:Base)-[:WriteOwner]->(:Base)
+(:Base)-[:WriteOwner]->(:Container)
+(:Base)-[:WriteOwner]->(:User)
+(:Base)-[:WriteOwner]->(:CertTemplate)
+(:Base)-[:WriteOwner]->(:Group)
+(:Base)-[:WriteOwner]->(:GPO)
+(:Base)-[:WriteOwner]->(:ADLocalGroup)
+(:Base)-[:WriteOwner]->(:Computer)
+(:Base)-[:WriteOwner]->(:RootCA)
+(:Base)-[:WriteOwner]->(:AIACA)
+(:Base)-[:WriteOwner]->(:NTAuthStore)
+(:Base)-[:WriteOwner]->(:OU)
+(:Base)-[:WriteOwner]->(:Domain)
+(:Base)-[:WriteDacl]->(:EnterpriseCA)
+(:Base)-[:WriteDacl]->(:Base)
+(:Base)-[:WriteDacl]->(:Container)
+(:Base)-[:WriteDacl]->(:CertTemplate)
+(:Base)-[:WriteDacl]->(:GPO)
+(:Base)-[:WriteDacl]->(:User)
+(:Base)-[:WriteDacl]->(:ADLocalGroup)
+(:Base)-[:WriteDacl]->(:Group)
+(:Base)-[:WriteDacl]->(:Computer)
+(:Base)-[:WriteDacl]->(:Domain)
+(:Base)-[:WriteDacl]->(:AIACA)
+(:Base)-[:WriteDacl]->(:OU)
+(:Base)-[:WriteDacl]->(:RootCA)
+(:Base)-[:WriteDacl]->(:NTAuthStore)
+(:Base)-[:ReadGMSAPassword]->(:User)
+(:Base)-[:ReadGMSAPassword]->(:Base)
+(:Base)-[:ManageCA]->(:EnterpriseCA)
+(:Base)-[:ManageCA]->(:Base)
+(:Base)-[:MemberOfLocalGroup]->(:ADLocalGroup)
+(:Base)-[:MemberOfLocalGroup]->(:Group)
+(:Base)-[:MemberOfLocalGroup]->(:Base)
+(:Base)-[:ManageCertificates]->(:EnterpriseCA)
+(:Base)-[:ManageCertificates]->(:Base)
+(:Base)-[:WritePKIEnrollmentFlag]->(:CertTemplate)
+(:Base)-[:WritePKIEnrollmentFlag]->(:Base)
+(:Base)-[:Enroll]->(:CertTemplate)
+(:Base)-[:Enroll]->(:Base)
+(:Base)-[:Enroll]->(:EnterpriseCA)
+(:Base)-[:AllowedToDelegate]->(:Computer)
+(:Base)-[:AllowedToDelegate]->(:Base)
+(:Base)-[:ForceChangePassword]->(:User)
+(:Base)-[:ForceChangePassword]->(:Base)
+(:Base)-[:ForceChangePassword]->(:Computer)
+(:Base)-[:ADCSESC3]->(:Domain)
+(:Base)-[:ADCSESC3]->(:Base)
+(:Base)-[:ADCSESC6b]->(:Domain)
+(:Base)-[:ADCSESC6b]->(:Base)
+(:Base)-[:DCSync]->(:Domain)
+(:Base)-[:DCSync]->(:Base)
+(:Base)-[:DCFor]->(:Domain)
+(:Base)-[:DCFor]->(:Base)
+(:Base)-[:DumpSMSAPassword]->(:User)
+(:Base)-[:DumpSMSAPassword]->(:Base)
+(:Base)-[:AllowedToAct]->(:Computer)
+(:Base)-[:AllowedToAct]->(:Base)
+(:Base)-[:ADCSESC9a]->(:Domain)
+(:Base)-[:ADCSESC9a]->(:Base)
+(:Base)-[:Owns]->(:Computer)
+(:Base)-[:Owns]->(:User)
+(:Base)-[:Owns]->(:Base)
+(:Base)-[:Owns]->(:Group)
+(:Base)-[:Owns]->(:Container)
+(:Base)-[:Owns]->(:CertTemplate)
+(:Base)-[:Owns]->(:EnterpriseCA)
+(:Base)-[:Owns]->(:AIACA)
+(:Base)-[:Owns]->(:NTAuthStore)
+(:Base)-[:Owns]->(:RootCA)
+(:Base)-[:Owns]->(:OU)
+(:Base)-[:Owns]->(:GPO)
+(:Base)-[:Owns]->(:ADLocalGroup)
+(:Base)-[:Owns]->(:Domain)
+(:Base)-[:Contains]->(:Container)
+(:Base)-[:Contains]->(:Base)
+(:Base)-[:Contains]->(:OU)
+(:Base)-[:Contains]->(:User)
+(:Base)-[:Contains]->(:Computer)
+(:Base)-[:Contains]->(:Group)
+(:Base)-[:Contains]->(:NTAuthStore)
+(:Base)-[:Contains]->(:CertTemplate)
+(:Base)-[:Contains]->(:EnterpriseCA)
+(:Base)-[:Contains]->(:RootCA)
+(:Base)-[:Contains]->(:AIACA)
+(:Base)-[:Contains]->(:ADLocalGroup)
+(:Base)-[:TrustedBy]->(:Domain)
+(:Base)-[:TrustedBy]->(:Base)
+(:Base)-[:NTAuthStoreFor]->(:Domain)
+(:Base)-[:NTAuthStoreFor]->(:Base)
+(:Base)-[:RootCAFor]->(:Domain)
+(:Base)-[:RootCAFor]->(:Base)
+(:Base)-[:PublishedTo]->(:EnterpriseCA)
+(:Base)-[:PublishedTo]->(:Base)
+(:Base)-[:EnrollOnBehalfOf]->(:CertTemplate)
+(:Base)-[:EnrollOnBehalfOf]->(:Base)
+(:Base)-[:EnterpriseCAFor]->(:RootCA)
+(:Base)-[:EnterpriseCAFor]->(:Base)
+(:Base)-[:TrustedForNTAuth]->(:NTAuthStore)
+(:Base)-[:TrustedForNTAuth]->(:Base)
+(:Base)-[:CanAbuseUPNCertMapping]->(:Computer)
+(:Base)-[:CanAbuseUPNCertMapping]->(:Base)
+(:Base)-[:CanAbuseWeakCertBinding]->(:Computer)
+(:Base)-[:CanAbuseWeakCertBinding]->(:Base)
+(:Base)-[:IssuedSignedBy]->(:EnterpriseCA)
+(:Base)-[:IssuedSignedBy]->(:Base)
+(:Base)-[:IssuedSignedBy]->(:RootCA)
+(:Base)-[:GPLink]->(:OU)
+(:Base)-[:GPLink]->(:Base)
+(:Base)-[:GPLink]->(:Domain)
+(:Base)-[:LocalToComputer]->(:Computer)
+(:Base)-[:LocalToComputer]->(:Base)
+(:Base)-[:ADCSESC9b]->(:Domain)
+(:Base)-[:ADCSESC9b]->(:Base)
+(:Base)-[:ADCSESC10b]->(:Domain)
+(:Base)-[:ADCSESC10b]->(:Base)
+(:Base)-[:ADCSESC10a]->(:Domain)
+(:Base)-[:ADCSESC10a]->(:Base)
+(:Base)-[:GetChangesAll]->(:Domain)
+(:Base)-[:GetChangesAll]->(:Base)
+(:Base)-[:AllExtendedRights]->(:User)
+(:Base)-[:AllExtendedRights]->(:Base)
+(:Base)-[:AllExtendedRights]->(:CertTemplate)
+(:Base)-[:AllExtendedRights]->(:Domain)
+(:Base)-[:AllExtendedRights]->(:OU)
+(:Base)-[:AllExtendedRights]->(:Computer)
+(:Base)-[:GenericWrite]->(:User)
+(:Base)-[:GenericWrite]->(:Base)
+(:Base)-[:GenericWrite]->(:Group)
+(:Base)-[:GenericWrite]->(:GPO)
+(:Base)-[:GenericWrite]->(:ADLocalGroup)
+(:Base)-[:GenericWrite]->(:Computer)
+(:Base)-[:GenericWrite]->(:OU)
+(:Base)-[:WritePKINameFlag]->(:CertTemplate)
+(:Base)-[:WritePKINameFlag]->(:Base)
+(:Base)-[:AddKeyCredentialLink]->(:User)
+(:Base)-[:AddKeyCredentialLink]->(:Base)
+(:Base)-[:AddKeyCredentialLink]->(:Computer)
+(:Base)-[:AddKeyCredentialLink]->(:Group)
+(:Base)-[:AddMember]->(:Group)
+(:Base)-[:AddMember]->(:Base)
+(:Base)-[:AddMember]->(:ADLocalGroup)
+(:Base)-[:AddMember]->(:Computer)
+(:Base)-[:GetChanges]->(:Domain)
+(:Base)-[:GetChanges]->(:Base)
+(:Base)-[:GetChangesInFilteredSet]->(:Domain)
+(:Base)-[:GetChangesInFilteredSet]->(:Base)
+(:Base)-[:RemoteInteractiveLogonPrivilege]->(:Computer)
+(:Base)-[:RemoteInteractiveLogonPrivilege]->(:Base)
+(:Base)-[:WriteAccountRestrictions]->(:Computer)
+(:Base)-[:WriteAccountRestrictions]->(:Base)
+(:Base)-[:ADCSESC1]->(:Domain)
+(:Base)-[:ADCSESC1]->(:Base)
+(:Base)-[:ADCSESC6a]->(:Domain)
+(:Base)-[:ADCSESC6a]->(:Base)
+(:Base)-[:AdminTo]->(:Computer)
+(:Base)-[:AdminTo]->(:Base)
+(:Base)-[:SyncLAPSPassword]->(:Computer)
+(:Base)-[:SyncLAPSPassword]->(:Base)
+(:Base)-[:DelegatedEnrollmentAgent]->(:CertTemplate)
+(:Base)-[:DelegatedEnrollmentAgent]->(:Base)
+(:Base)-[:ReadLAPSPassword]->(:Computer)
+(:Base)-[:ReadLAPSPassword]->(:Base)
+(:Base)-[:ADCSESC4]->(:Domain)
+(:Base)-[:ADCSESC4]->(:Base)
+(:Base)-[:AddSelf]->(:Group)
+(:Base)-[:AddSelf]->(:Base)
+(:Base)-[:AddAllowedToAct]->(:Computer)
+(:Base)-[:AddAllowedToAct]->(:Base)
