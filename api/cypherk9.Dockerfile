@@ -4,12 +4,12 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /app/cypherk9/
 
 COPY requirements.txt .
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
 COPY bh_schema.txt .
 COPY bh_schema_full.txt .
 COPY api.py .
-
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
 
 EXPOSE 8000
 

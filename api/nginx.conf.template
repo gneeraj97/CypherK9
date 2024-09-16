@@ -1,0 +1,18 @@
+events { }
+http {
+  upstream cypherk9 {
+    server cypherk9-api:8000;
+  }
+
+  server {
+    listen 8000;
+
+    location / {
+      if ($http_authorization != "Bearer ${API_KEY}") {
+        return 401;
+      }
+
+      proxy_pass http://cypherk9;
+    }
+  }
+}

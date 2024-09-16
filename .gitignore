@@ -2,5 +2,3 @@ venv/
 *.pyc
 .DS_STORE
 cypherk9_api_key.txt
-api/docker-compose.yaml
-api/nginx.conf

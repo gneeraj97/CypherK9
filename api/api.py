@@ -31,7 +31,7 @@ litellm_client = openai.OpenAI(
 def build_augmentation_prompt(schema, query):
     """Builds the augmentation prompt for the stock LLM."""
     if "Mistral-7B-Instruct" in os.environ["AUGMENT_MODEL"]:
-        return f"""<s> {schema} [INST] You are a cypher graph problem solver, you build strategy to solve programming problem. Using the given full graph schema previously, write three single line clear instruction or steps to solve the question. Do not write code. Do not add complexities.  Make the steps as simple as possible, this will be used as pseudo code. Question: {query} [/INST]"""
+        return f"""<s> {schema} [INST] You are a Cypher graph problem solver, you build strategies to plan Cypher query generation. Using the given full graph schema previously, write three single line clear instructions or steps to solve the question. Do not write code. Do not add complexities. Make the steps as simple as possible, this will be used as pseudo code. Question: {query} [/INST]"""
     else:
         return "ERROR IN AUGMENTATION PROMPT GENERATION"
 
@@ -39,10 +39,10 @@ def build_augmentation_prompt(schema, query):
 def build_cypher_inst_prompt(prompt, schema, strategy, query):
     """Builds the Cypher instruction prompt for the tuned Deepseek Coder LLM."""
     return f'''
-You are an AI Cypher programming assistant, utilizing the DeepSeek Coder model. You only return code. Do not provide explanation along with it. Write cypher queries taking help from the graph schema and strategy given below.\n{schema}\n{strategy}
+You are an AI Cypher programming assistant, utilizing the DeepSeek Coder model. You only return code. Do not provide explanation along with it. Write cypher queries taking help from the graph schema and strategy given below. \n {schema}. \n {strategy}.
 ### Instruction:
-{prompt}
-{query}
+{prompt}.
+{query}.
 ### Response:
 '''
 
@@ -99,6 +99,7 @@ def generate_cypher(user_query, schema, strategy):
                 "content": input
             }
         ],
+        # temperature=0.1
     )
     print(f"[*] Generation took: {(time.time()-start):.2f} seconds")
     return response.choices[0].message.content

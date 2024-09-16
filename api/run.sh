@@ -1,11 +1,10 @@
 #!/bin/bash
 
 if [ -f /proc/sys/kernel/random/uuid ]; then
-    API_KEY="$(cat /proc/sys/kernel/random/uuid)-$(cat /proc/sys/kernel/random/uuid)"
+    export API_KEY="$(cat /proc/sys/kernel/random/uuid)-$(cat /proc/sys/kernel/random/uuid)"
 else
-    API_KEY="$(uuidgen)-$(uuidgen)"
+    export API_KEY="$(uuidgen)-$(uuidgen)"
 fi
-
 
 if [ -z "${LITELLM_BASE_URL}" ]; then
   echo "LITELLM_BASE_URL is not set or is empty"
@@ -23,50 +22,8 @@ if [ ! -f "/usr/local/bin/docker-compose" ]; then
 fi
 
 
-cat << EOF > docker-compose.yaml
-services:
-  cypherk9-api:
-    build:
-      context: .
-      dockerfile: cypherk9.Dockerfile
-    environment:
-      LITELLM_BASE_URL: $LITELLM_BASE_URL
-      LITELLM_API_KEY: $LITELLM_API_KEY
-  nginx:
-    image: nginx:latest
-    ports:
-      - 8000:8000
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-    depends_on:
-      - cypherk9-api
-EOF
-
-cat << EOF > nginx.conf
-events { }
-
-http {
-  upstream cypherk9 {
-    server cypherk9-api:8000;
-  }
-
-  server {
-    listen 8000;
-
-    location / {
-      if (\$http_authorization != "Bearer $API_KEY") {
-        return 401;
-      }
-
-      proxy_pass http://cypherk9;
-    }
-  }
-}
-EOF
-
-
 docker-compose up -d
 
-echo -e "\n\nCYPHER_K9_API_KEY: $API_KEY\n\n"
+echo -e "\n\nCYPHER_K9_API_KEY: $API_KEY (also written to 'cypherk9_api_key'.txt)\n\n"
 
 echo $API_KEY > cypherk9_api_key.txt

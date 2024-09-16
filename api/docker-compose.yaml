@@ -1,0 +1,19 @@
+services:
+  cypherk9-api:
+    build:
+      context: .
+      dockerfile: cypherk9.Dockerfile
+    environment:
+      LITELLM_BASE_URL: ${LITELLM_BASE_URL}
+      LITELLM_API_KEY: ${LITELLM_API_KEY}
+  nginx:
+    image: nginx:latest
+    ports:
+      - 8000:8000
+    volumes:
+      - ./nginx.conf.template:/etc/nginx/nginx.conf.template:ro
+    environment:
+      - API_KEY=${API_KEY}
+    entrypoint: /bin/sh -c "envsubst '$$API_KEY' < /etc/nginx/nginx.conf.template > /etc/nginx/nginx.conf && cat /etc/nginx/nginx.conf && nginx -g 'daemon off;'"
+    depends_on:
+      - cypherk9-api

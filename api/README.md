@@ -53,7 +53,7 @@ docker-compose up -d
 Then configure a model with the following settings:
 - **type:** openai-compatible
 - **name:** deepseek-coder
-- **litellm model:** openai/deepseek-ai/deepseek-coder-6.7b-instruct
+- **litellm model:** openai//root/deepseek_cypher/
 - **api_base:** http://IP:8080/v1/
 - **api_key:** GUID-GUID
 
